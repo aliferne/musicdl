@@ -1,0 +1,1820 @@
+{
+    "resourceState": true,
+    "songs": [
+        {
+            "rtUrls": [
+                
+            ],
+            // ar == artist
+            "ar": [
+                {
+                    // TODO: 明天继续破译 album 的返回结果，并修改 musicdl 源码以解析
+                    "id": 16208, // 因此 id 可以用于构造 url ==> https://music.163.com/#/artist?id=16208
+                    "name": "坂上なち",
+                    "alia": [
+                        "nachi"
+                    ]
+                }
+            ],
+            // al == album
+            "al": {
+                "id": 78989061,
+                "name": "FortuneStories-SELECTIONOFnachi",
+                "picUrl": "https://p2.music.126.net/pbMD5rHOnc2mffl9L7bJJg==/109951164058405278.jpg",
+                "pic_str": "109951164058405278",
+                "pic": 109951164058405278
+            },
+            "st": 1,
+            "noCopyrightRcmd": null,
+            "artistClassics": null,
+            "songJumpInfo": null,
+            "djId": 0,
+            "no": 1,
+            "fee": 0,
+            "mv": 0,
+            "cd": "1/1",
+            "t": 0,
+            "v": 3,
+            "dt": 332982,
+            "rtype": 0,
+            "rurl": null,
+            "pst": 0,
+            "alia": [
+                "原曲：星条旗のピエロ"
+            ],
+            "pop": 5.0,
+            "rt": "",
+            "mst": 9,
+            "cp": 663018,
+            "crbt": null,
+            "cf": "",
+            "h": {
+                "br": 320000,
+                "fid": 0,
+                "size": 13320403,
+                "vd": -95168.0,
+                "sr": 44100
+            },
+            "sq": null,
+            "hr": null,
+            "l": {
+                "br": 128000,
+                "fid": 0,
+                "size": 5328187,
+                "vd": -91405.0,
+                "sr": 44100
+            },
+            "rtUrl": null,
+            "ftype": 0,
+            "mark": 262144,
+            "a": null,
+            "m": {
+                "br": 192000,
+                "fid": 0,
+                "size": 7992259,
+                "vd": -92686.0,
+                "sr": 44100
+            },
+            "name": "fakeapollo",
+            "id": 1363891594,
+            "privilege": {
+                "id": 1363891594,
+                "fee": 0,
+                "payed": 0,
+                "st": 0,
+                "pl": 320000,
+                "dl": 320000,
+                "sp": 7,
+                "cp": 1,
+                "subp": 1,
+                "cs": false,
+                "maxbr": 320000,
+                "fl": 320000,
+                "toast": false,
+                "flag": 256,
+                "preSell": false,
+                "playMaxbr": 320000,
+                "downloadMaxbr": 320000,
+                "maxBrLevel": "exhigh",
+                "playMaxBrLevel": "exhigh",
+                "downloadMaxBrLevel": "exhigh",
+                "plLevel": "exhigh",
+                "dlLevel": "exhigh",
+                "flLevel": "exhigh",
+                "rscl": null,
+                "freeTrialPrivilege": {
+                    "resConsumable": false,
+                    "userConsumable": false,
+                    "listenType": null,
+                    "cannotListenReason": null,
+                    "playReason": null,
+                    "freeLimitTagType": null
+                },
+                "rightSource": 0,
+                "chargeInfoList": [
+                    {
+                        "rate": 128000,
+                        "chargeUrl": null,
+                        "chargeMessage": null,
+                        "chargeType": 0
+                    },
+                    {
+                        "rate": 192000,
+                        "chargeUrl": null,
+                        "chargeMessage": null,
+                        "chargeType": 0
+                    },
+                    {
+                        "rate": 320000,
+                        "chargeUrl": null,
+                        "chargeMessage": null,
+                        "chargeType": 0
+                    },
+                    {
+                        "rate": 999000,
+                        "chargeUrl": null,
+                        "chargeMessage": null,
+                        "chargeType": 1
+                    }
+                ],
+                "code": 0,
+                "message": null,
+                "plLevels": null,
+                "dlLevels": null,
+                "ignoreCache": null,
+                "bd": null
+            }
+        },
+        {
+            "rtUrls": [
+                
+            ],
+            "ar": [
+                {
+                    "id": 16208,
+                    "name": "坂上なち",
+                    "alia": [
+                        "nachi"
+                    ]
+                }
+            ],
+            "al": {
+                "id": 78989061,
+                "name": "FortuneStories-SELECTIONOFnachi",
+                "picUrl": "https: //p2.music.126.net/pbMD5rHOnc2mffl9L7bJJg==/109951164058405278.jpg",
+                "pic_str": "109951164058405278",
+                "pic": 109951164058405278
+            },
+            "st": 1,
+            "noCopyrightRcmd": null,
+            "artistClassics": null,
+            "songJumpInfo": null,
+            "djId": 0,
+            "no": 2,
+            "fee": 0,
+            "mv": 0,
+            "cd": "1/1",
+            "t": 0,
+            "v": 5,
+            "dt": 483134,
+            "rtype": 0,
+            "rurl": null,
+            "pst": 0,
+            "alia": [
+                "原曲：フォールオブフォール\u3000～秋めく滝"
+            ],
+            "pop": 55.0,
+            "rt": "",
+            "mst": 9,
+            "cp": 663018,
+            "crbt": null,
+            "cf": "",
+            "h": {
+                "br": 320000,
+                "fid": 0,
+                "size": 19326476,
+                "vd": -93173.0,
+                "sr": 44100
+            },
+            "sq": null,
+            "hr": null,
+            "l": {
+                "br": 128000,
+                "fid": 0,
+                "size": 7730617,
+                "vd": -89119.0,
+                "sr": 44100
+            },
+            "rtUrl": null,
+            "ftype": 0,
+            "mark": 262144,
+            "a": null,
+            "m": {
+                "br": 192000,
+                "fid": 0,
+                "size": 11595903,
+                "vd": -90674.0,
+                "sr": 44100
+            },
+            "name": "物見鴉の鬼渡し",
+            "id": 1363891596,
+            "privilege": {
+                "id": 1363891596,
+                "fee": 0,
+                "payed": 0,
+                "st": 0,
+                "pl": 320000,
+                "dl": 320000,
+                "sp": 7,
+                "cp": 1,
+                "subp": 1,
+                "cs": false,
+                "maxbr": 320000,
+                "fl": 320000,
+                "toast": false,
+                "flag": 256,
+                "preSell": false,
+                "playMaxbr": 320000,
+                "downloadMaxbr": 320000,
+                "maxBrLevel": "exhigh",
+                "playMaxBrLevel": "exhigh",
+                "downloadMaxBrLevel": "exhigh",
+                "plLevel": "exhigh",
+                "dlLevel": "exhigh",
+                "flLevel": "exhigh",
+                "rscl": null,
+                "freeTrialPrivilege": {
+                    "resConsumable": false,
+                    "userConsumable": false,
+                    "listenType": null,
+                    "cannotListenReason": null,
+                    "playReason": null,
+                    "freeLimitTagType": null
+                },
+                "rightSource": 0,
+                "chargeInfoList": [
+                    {
+                        "rate": 128000,
+                        "chargeUrl": null,
+                        "chargeMessage": null,
+                        "chargeType": 0
+                    },
+                    {
+                        "rate": 192000,
+                        "chargeUrl": null,
+                        "chargeMessage": null,
+                        "chargeType": 0
+                    },
+                    {
+                        "rate": 320000,
+                        "chargeUrl": null,
+                        "chargeMessage": null,
+                        "chargeType": 0
+                    },
+                    {
+                        "rate": 999000,
+                        "chargeUrl": null,
+                        "chargeMessage": null,
+                        "chargeType": 1
+                    }
+                ],
+                "code": 0,
+                "message": null,
+                "plLevels": null,
+                "dlLevels": null,
+                "ignoreCache": null,
+                "bd": null
+            }
+        },
+        {
+            "rtUrls": [
+                
+            ],
+            "ar": [
+                {
+                    "id": 16208,
+                    "name": "坂上なち",
+                    "alia": [
+                        "nachi"
+                    ]
+                }
+            ],
+            "al": {
+                "id": 78989061,
+                "name": "FortuneStories-SELECTIONOFnachi",
+                "picUrl": "https: //p2.music.126.net/pbMD5rHOnc2mffl9L7bJJg==/109951164058405278.jpg",
+                "pic_str": "109951164058405278",
+                "pic": 109951164058405278
+            },
+            "st": 1,
+            "noCopyrightRcmd": null,
+            "artistClassics": null,
+            "songJumpInfo": null,
+            "djId": 0,
+            "no": 3,
+            "fee": 0,
+            "mv": 0,
+            "cd": "1/1",
+            "t": 0,
+            "v": 4,
+            "dt": 288706,
+            "rtype": 0,
+            "rurl": null,
+            "pst": 0,
+            "alia": [
+                "原曲：リジッドパラダイス"
+            ],
+            "pop": 10.0,
+            "rt": "",
+            "mst": 9,
+            "cp": 663018,
+            "crbt": null,
+            "cf": "",
+            "h": {
+                "br": 320000,
+                "fid": 0,
+                "size": 11551390,
+                "vd": -51607.0,
+                "sr": 44100
+            },
+            "sq": {
+                "br": 1096424,
+                "fid": 0,
+                "size": 39568143,
+                "vd": -51577.0,
+                "sr": 44100
+            },
+            "hr": null,
+            "l": {
+                "br": 128000,
+                "fid": 0,
+                "size": 4620581,
+                "vd": -48212.0,
+                "sr": 44100
+            },
+            "rtUrl": null,
+            "ftype": 0,
+            "mark": 262144,
+            "a": null,
+            "m": {
+                "br": 192000,
+                "fid": 0,
+                "size": 6930851,
+                "vd": -49295.0,
+                "sr": 44100
+            },
+            "name": "Paradise≠Paradigm",
+            "id": 1363890967,
+            "privilege": {
+                "id": 1363890967,
+                "fee": 0,
+                "payed": 0,
+                "st": 0,
+                "pl": 320000,
+                "dl": 999000,
+                "sp": 7,
+                "cp": 1,
+                "subp": 1,
+                "cs": false,
+                "maxbr": 999000,
+                "fl": 320000,
+                "toast": false,
+                "flag": 256,
+                "preSell": false,
+                "playMaxbr": 999000,
+                "downloadMaxbr": 999000,
+                "maxBrLevel": "lossless",
+                "playMaxBrLevel": "lossless",
+                "downloadMaxBrLevel": "lossless",
+                "plLevel": "exhigh",
+                "dlLevel": "lossless",
+                "flLevel": "exhigh",
+                "rscl": null,
+                "freeTrialPrivilege": {
+                    "resConsumable": false,
+                    "userConsumable": false,
+                    "listenType": null,
+                    "cannotListenReason": null,
+                    "playReason": null,
+                    "freeLimitTagType": null
+                },
+                "rightSource": 0,
+                "chargeInfoList": [
+                    {
+                        "rate": 128000,
+                        "chargeUrl": null,
+                        "chargeMessage": null,
+                        "chargeType": 0
+                    },
+                    {
+                        "rate": 192000,
+                        "chargeUrl": null,
+                        "chargeMessage": null,
+                        "chargeType": 0
+                    },
+                    {
+                        "rate": 320000,
+                        "chargeUrl": null,
+                        "chargeMessage": null,
+                        "chargeType": 0
+                    },
+                    {
+                        "rate": 999000,
+                        "chargeUrl": null,
+                        "chargeMessage": null,
+                        "chargeType": 1
+                    }
+                ],
+                "code": 0,
+                "message": null,
+                "plLevels": null,
+                "dlLevels": null,
+                "ignoreCache": null,
+                "bd": null
+            }
+        },
+        {
+            "rtUrls": [
+                
+            ],
+            "ar": [
+                {
+                    "id": 16208,
+                    "name": "坂上なち",
+                    "alia": [
+                        "nachi"
+                    ]
+                }
+            ],
+            "al": {
+                "id": 78989061,
+                "name": "FortuneStories-SELECTIONOFnachi",
+                "picUrl": "https: //p2.music.126.net/pbMD5rHOnc2mffl9L7bJJg==/109951164058405278.jpg",
+                "pic_str": "109951164058405278",
+                "pic": 109951164058405278
+            },
+            "st": 1,
+            "noCopyrightRcmd": null,
+            "artistClassics": null,
+            "songJumpInfo": null,
+            "djId": 0,
+            "no": 4,
+            "fee": 0,
+            "mv": 0,
+            "cd": "1/1",
+            "t": 0,
+            "v": 4,
+            "dt": 462367,
+            "rtype": 0,
+            "rurl": null,
+            "pst": 0,
+            "alia": [
+                "原曲：柳の下のデュラハン"
+            ],
+            "pop": 10.0,
+            "rt": "",
+            "mst": 9,
+            "cp": 663018,
+            "crbt": null,
+            "cf": "",
+            "h": {
+                "br": 320000,
+                "fid": 0,
+                "size": 18495782,
+                "vd": -89630.0,
+                "sr": 44100
+            },
+            "sq": null,
+            "hr": null,
+            "l": {
+                "br": 128000,
+                "fid": 0,
+                "size": 7398339,
+                "vd": -85360.0,
+                "sr": 44100
+            },
+            "rtUrl": null,
+            "ftype": 0,
+            "mark": 262144,
+            "a": null,
+            "m": {
+                "br": 192000,
+                "fid": 0,
+                "size": 11097487,
+                "vd": -86933.0,
+                "sr": 44100
+            },
+            "name": "とびだせ!バンキッキ",
+            "id": 1363890972,
+            "tns": [
+                "FlyOut!Bankikki"
+            ],
+            "privilege": {
+                "id": 1363890972,
+                "fee": 0,
+                "payed": 0,
+                "st": 0,
+                "pl": 320000,
+                "dl": 320000,
+                "sp": 7,
+                "cp": 1,
+                "subp": 1,
+                "cs": false,
+                "maxbr": 320000,
+                "fl": 320000,
+                "toast": false,
+                "flag": 256,
+                "preSell": false,
+                "playMaxbr": 320000,
+                "downloadMaxbr": 320000,
+                "maxBrLevel": "exhigh",
+                "playMaxBrLevel": "exhigh",
+                "downloadMaxBrLevel": "exhigh",
+                "plLevel": "exhigh",
+                "dlLevel": "exhigh",
+                "flLevel": "exhigh",
+                "rscl": null,
+                "freeTrialPrivilege": {
+                    "resConsumable": false,
+                    "userConsumable": false,
+                    "listenType": null,
+                    "cannotListenReason": null,
+                    "playReason": null,
+                    "freeLimitTagType": null
+                },
+                "rightSource": 0,
+                "chargeInfoList": [
+                    {
+                        "rate": 128000,
+                        "chargeUrl": null,
+                        "chargeMessage": null,
+                        "chargeType": 0
+                    },
+                    {
+                        "rate": 192000,
+                        "chargeUrl": null,
+                        "chargeMessage": null,
+                        "chargeType": 0
+                    },
+                    {
+                        "rate": 320000,
+                        "chargeUrl": null,
+                        "chargeMessage": null,
+                        "chargeType": 0
+                    },
+                    {
+                        "rate": 999000,
+                        "chargeUrl": null,
+                        "chargeMessage": null,
+                        "chargeType": 1
+                    }
+                ],
+                "code": 0,
+                "message": null,
+                "plLevels": null,
+                "dlLevels": null,
+                "ignoreCache": null,
+                "bd": null
+            }
+        },
+        {
+            "rtUrls": [
+                
+            ],
+            "ar": [
+                {
+                    "id": 16208,
+                    "name": "坂上なち",
+                    "alia": [
+                        "nachi"
+                    ]
+                }
+            ],
+            "al": {
+                "id": 78989061,
+                "name": "FortuneStories-SELECTIONOFnachi",
+                "picUrl": "https: //p1.music.126.net/pbMD5rHOnc2mffl9L7bJJg==/109951164058405278.jpg",
+                "pic_str": "109951164058405278",
+                "pic": 109951164058405278
+            },
+            "st": 1,
+            "noCopyrightRcmd": null,
+            "artistClassics": null,
+            "songJumpInfo": null,
+            "djId": 0,
+            "no": 5,
+            "fee": 0,
+            "mv": 0,
+            "cd": "1/1",
+            "t": 0,
+            "v": 3,
+            "dt": 262400,
+            "rtype": 0,
+            "rurl": null,
+            "pst": 0,
+            "alia": [
+                "原曲：年中夢中の好奇心"
+            ],
+            "pop": 10.0,
+            "rt": "",
+            "mst": 9,
+            "cp": 663018,
+            "crbt": null,
+            "cf": "",
+            "h": {
+                "br": 320000,
+                "fid": 0,
+                "size": 10497089,
+                "vd": -104523.0,
+                "sr": 44100
+            },
+            "sq": null,
+            "hr": null,
+            "l": {
+                "br": 128000,
+                "fid": 0,
+                "size": 4198862,
+                "vd": -100642.0,
+                "sr": 44100
+            },
+            "rtUrl": null,
+            "ftype": 0,
+            "mark": 262144,
+            "a": null,
+            "m": {
+                "br": 192000,
+                "fid": 0,
+                "size": 6298271,
+                "vd": -101989.0,
+                "sr": 44100
+            },
+            "name": "TheBeautifulWorld,\n            ForeverWorld",
+            "id": 1363890968,
+            "privilege": {
+                "id": 1363890968,
+                "fee": 0,
+                "payed": 0,
+                "st": 0,
+                "pl": 320000,
+                "dl": 320000,
+                "sp": 7,
+                "cp": 1,
+                "subp": 1,
+                "cs": false,
+                "maxbr": 320000,
+                "fl": 320000,
+                "toast": false,
+                "flag": 256,
+                "preSell": false,
+                "playMaxbr": 320000,
+                "downloadMaxbr": 320000,
+                "maxBrLevel": "exhigh",
+                "playMaxBrLevel": "exhigh",
+                "downloadMaxBrLevel": "exhigh",
+                "plLevel": "exhigh",
+                "dlLevel": "exhigh",
+                "flLevel": "exhigh",
+                "rscl": null,
+                "freeTrialPrivilege": {
+                    "resConsumable": false,
+                    "userConsumable": false,
+                    "listenType": null,
+                    "cannotListenReason": null,
+                    "playReason": null,
+                    "freeLimitTagType": null
+                },
+                "rightSource": 0,
+                "chargeInfoList": [
+                    {
+                        "rate": 128000,
+                        "chargeUrl": null,
+                        "chargeMessage": null,
+                        "chargeType": 0
+                    },
+                    {
+                        "rate": 192000,
+                        "chargeUrl": null,
+                        "chargeMessage": null,
+                        "chargeType": 0
+                    },
+                    {
+                        "rate": 320000,
+                        "chargeUrl": null,
+                        "chargeMessage": null,
+                        "chargeType": 0
+                    },
+                    {
+                        "rate": 999000,
+                        "chargeUrl": null,
+                        "chargeMessage": null,
+                        "chargeType": 1
+                    }
+                ],
+                "code": 0,
+                "message": null,
+                "plLevels": null,
+                "dlLevels": null,
+                "ignoreCache": null,
+                "bd": null
+            }
+        },
+        {
+            "rtUrls": [
+                
+            ],
+            "ar": [
+                {
+                    "id": 16208,
+                    "name": "坂上なち",
+                    "alia": [
+                        "nachi"
+                    ]
+                }
+            ],
+            "al": {
+                "id": 78989061,
+                "name": "FortuneStories-SELECTIONOFnachi",
+                "picUrl": "https: //p1.music.126.net/pbMD5rHOnc2mffl9L7bJJg==/109951164058405278.jpg",
+                "pic_str": "109951164058405278",
+                "pic": 109951164058405278
+            },
+            "st": 1,
+            "noCopyrightRcmd": null,
+            "artistClassics": null,
+            "songJumpInfo": null,
+            "djId": 0,
+            "no": 6,
+            "fee": 0,
+            "mv": 0,
+            "cd": "1/1",
+            "t": 0,
+            "v": 4,
+            "dt": 677000,
+            "rtype": 0,
+            "rurl": null,
+            "pst": 0,
+            "alia": [
+                "原曲：ラクトガール～少女密室"
+            ],
+            "pop": 10.0,
+            "rt": "",
+            "mst": 9,
+            "cp": 663018,
+            "crbt": null,
+            "cf": "",
+            "h": {
+                "br": 320001,
+                "fid": 0,
+                "size": 27082754,
+                "vd": -29014.0,
+                "sr": 44100
+            },
+            "sq": null,
+            "hr": null,
+            "l": {
+                "br": 128001,
+                "fid": 0,
+                "size": 10833128,
+                "vd": -24863.0,
+                "sr": 44100
+            },
+            "rtUrl": null,
+            "ftype": 0,
+            "mark": 262144,
+            "a": null,
+            "m": {
+                "br": 192001,
+                "fid": 0,
+                "size": 16249670,
+                "vd": -26459.0,
+                "sr": 44100
+            },
+            "name": "賢者の極北",
+            "id": 1363891600,
+            "privilege": {
+                "id": 1363891600,
+                "fee": 0,
+                "payed": 0,
+                "st": 0,
+                "pl": 320000,
+                "dl": 999000,
+                "sp": 7,
+                "cp": 1,
+                "subp": 1,
+                "cs": false,
+                "maxbr": 999000,
+                "fl": 320000,
+                "toast": false,
+                "flag": 256,
+                "preSell": false,
+                "playMaxbr": 999000,
+                "downloadMaxbr": 999000,
+                "maxBrLevel": "lossless",
+                "playMaxBrLevel": "lossless",
+                "downloadMaxBrLevel": "lossless",
+                "plLevel": "exhigh",
+                "dlLevel": "lossless",
+                "flLevel": "exhigh",
+                "rscl": null,
+                "freeTrialPrivilege": {
+                    "resConsumable": false,
+                    "userConsumable": false,
+                    "listenType": null,
+                    "cannotListenReason": null,
+                    "playReason": null,
+                    "freeLimitTagType": null
+                },
+                "rightSource": 0,
+                "chargeInfoList": [
+                    {
+                        "rate": 128000,
+                        "chargeUrl": null,
+                        "chargeMessage": null,
+                        "chargeType": 0
+                    },
+                    {
+                        "rate": 192000,
+                        "chargeUrl": null,
+                        "chargeMessage": null,
+                        "chargeType": 0
+                    },
+                    {
+                        "rate": 320000,
+                        "chargeUrl": null,
+                        "chargeMessage": null,
+                        "chargeType": 0
+                    },
+                    {
+                        "rate": 999000,
+                        "chargeUrl": null,
+                        "chargeMessage": null,
+                        "chargeType": 1
+                    }
+                ],
+                "code": 0,
+                "message": null,
+                "plLevels": null,
+                "dlLevels": null,
+                "ignoreCache": null,
+                "bd": null
+            }
+        },
+        {
+            "rtUrls": [
+                
+            ],
+            "ar": [
+                {
+                    "id": 16208,
+                    "name": "坂上なち",
+                    "alia": [
+                        "nachi"
+                    ]
+                }
+            ],
+            "al": {
+                "id": 78989061,
+                "name": "FortuneStories-SELECTIONOFnachi",
+                "picUrl": "https: //p1.music.126.net/pbMD5rHOnc2mffl9L7bJJg==/109951164058405278.jpg",
+                "pic_str": "109951164058405278",
+                "pic": 109951164058405278
+            },
+            "st": 1,
+            "noCopyrightRcmd": null,
+            "artistClassics": null,
+            "songJumpInfo": null,
+            "djId": 0,
+            "no": 7,
+            "fee": 0,
+            "mv": 0,
+            "cd": "1/1",
+            "t": 0,
+            "v": 5,
+            "dt": 250488,
+            "rtype": 0,
+            "rurl": null,
+            "pst": 0,
+            "alia": [
+                "原曲：孤独なウェアウルフ"
+            ],
+            "pop": 10.0,
+            "rt": "",
+            "mst": 9,
+            "cp": 663018,
+            "crbt": null,
+            "cf": "",
+            "h": {
+                "br": 320000,
+                "fid": 0,
+                "size": 10020615,
+                "vd": -87680.0,
+                "sr": 44100
+            },
+            "sq": null,
+            "hr": null,
+            "l": {
+                "br": 128000,
+                "fid": 0,
+                "size": 4008272,
+                "vd": -83646.0,
+                "sr": 44100
+            },
+            "rtUrl": null,
+            "ftype": 0,
+            "mark": 262144,
+            "a": null,
+            "m": {
+                "br": 192000,
+                "fid": 0,
+                "size": 6012386,
+                "vd": -85079.0,
+                "sr": 44100
+            },
+            "name": "pointofsilence",
+            "id": 1363890966,
+            "privilege": {
+                "id": 1363890966,
+                "fee": 0,
+                "payed": 0,
+                "st": 0,
+                "pl": 320000,
+                "dl": 320000,
+                "sp": 7,
+                "cp": 1,
+                "subp": 1,
+                "cs": false,
+                "maxbr": 320000,
+                "fl": 320000,
+                "toast": false,
+                "flag": 256,
+                "preSell": false,
+                "playMaxbr": 320000,
+                "downloadMaxbr": 320000,
+                "maxBrLevel": "exhigh",
+                "playMaxBrLevel": "exhigh",
+                "downloadMaxBrLevel": "exhigh",
+                "plLevel": "exhigh",
+                "dlLevel": "exhigh",
+                "flLevel": "exhigh",
+                "rscl": null,
+                "freeTrialPrivilege": {
+                    "resConsumable": false,
+                    "userConsumable": false,
+                    "listenType": null,
+                    "cannotListenReason": null,
+                    "playReason": null,
+                    "freeLimitTagType": null
+                },
+                "rightSource": 0,
+                "chargeInfoList": [
+                    {
+                        "rate": 128000,
+                        "chargeUrl": null,
+                        "chargeMessage": null,
+                        "chargeType": 0
+                    },
+                    {
+                        "rate": 192000,
+                        "chargeUrl": null,
+                        "chargeMessage": null,
+                        "chargeType": 0
+                    },
+                    {
+                        "rate": 320000,
+                        "chargeUrl": null,
+                        "chargeMessage": null,
+                        "chargeType": 0
+                    },
+                    {
+                        "rate": 999000,
+                        "chargeUrl": null,
+                        "chargeMessage": null,
+                        "chargeType": 1
+                    }
+                ],
+                "code": 0,
+                "message": null,
+                "plLevels": null,
+                "dlLevels": null,
+                "ignoreCache": null,
+                "bd": null
+            }
+        },
+        {
+            "rtUrls": [
+                
+            ],
+            "ar": [
+                {
+                    "id": 16208,
+                    "name": "坂上なち",
+                    "alia": [
+                        "nachi"
+                    ]
+                }
+            ],
+            "al": {
+                "id": 78989061,
+                "name": "FortuneStories-SELECTIONOFnachi",
+                "picUrl": "https: //p1.music.126.net/pbMD5rHOnc2mffl9L7bJJg==/109951164058405278.jpg",
+                "pic_str": "109951164058405278",
+                "pic": 109951164058405278
+            },
+            "st": 1,
+            "noCopyrightRcmd": null,
+            "artistClassics": null,
+            "songJumpInfo": null,
+            "djId": 0,
+            "no": 8,
+            "fee": 0,
+            "mv": 0,
+            "cd": "1/1",
+            "t": 0,
+            "v": 3,
+            "dt": 278778,
+            "rtype": 0,
+            "rurl": null,
+            "pst": 0,
+            "alia": [
+                "原曲：広有射怪鳥事～TillWhen?"
+            ],
+            "pop": 5.0,
+            "rt": "",
+            "mst": 9,
+            "cp": 663018,
+            "crbt": null,
+            "cf": "",
+            "h": {
+                "br": 320000,
+                "fid": 0,
+                "size": 11152240,
+                "vd": -102439.0,
+                "sr": 44100
+            },
+            "sq": null,
+            "hr": null,
+            "l": {
+                "br": 128000,
+                "fid": 0,
+                "size": 4460922,
+                "vd": -98619.0,
+                "sr": 44100
+            },
+            "rtUrl": null,
+            "ftype": 0,
+            "mark": 262144,
+            "a": null,
+            "m": {
+                "br": 192000,
+                "fid": 0,
+                "size": 6691361,
+                "vd": -99925.0,
+                "sr": 44100
+            },
+            "name": "SweetLove",
+            "id": 1363890970,
+            "privilege": {
+                "id": 1363890970,
+                "fee": 0,
+                "payed": 0,
+                "st": 0,
+                "pl": 320000,
+                "dl": 320000,
+                "sp": 7,
+                "cp": 1,
+                "subp": 1,
+                "cs": false,
+                "maxbr": 320000,
+                "fl": 320000,
+                "toast": false,
+                "flag": 256,
+                "preSell": false,
+                "playMaxbr": 320000,
+                "downloadMaxbr": 320000,
+                "maxBrLevel": "exhigh",
+                "playMaxBrLevel": "exhigh",
+                "downloadMaxBrLevel": "exhigh",
+                "plLevel": "exhigh",
+                "dlLevel": "exhigh",
+                "flLevel": "exhigh",
+                "rscl": null,
+                "freeTrialPrivilege": {
+                    "resConsumable": false,
+                    "userConsumable": false,
+                    "listenType": null,
+                    "cannotListenReason": null,
+                    "playReason": null,
+                    "freeLimitTagType": null
+                },
+                "rightSource": 0,
+                "chargeInfoList": [
+                    {
+                        "rate": 128000,
+                        "chargeUrl": null,
+                        "chargeMessage": null,
+                        "chargeType": 0
+                    },
+                    {
+                        "rate": 192000,
+                        "chargeUrl": null,
+                        "chargeMessage": null,
+                        "chargeType": 0
+                    },
+                    {
+                        "rate": 320000,
+                        "chargeUrl": null,
+                        "chargeMessage": null,
+                        "chargeType": 0
+                    },
+                    {
+                        "rate": 999000,
+                        "chargeUrl": null,
+                        "chargeMessage": null,
+                        "chargeType": 1
+                    }
+                ],
+                "code": 0,
+                "message": null,
+                "plLevels": null,
+                "dlLevels": null,
+                "ignoreCache": null,
+                "bd": null
+            }
+        },
+        {
+            "rtUrls": [
+                
+            ],
+            "ar": [
+                {
+                    "id": 16208,
+                    "name": "坂上なち",
+                    "alia": [
+                        "nachi"
+                    ]
+                }
+            ],
+            "al": {
+                "id": 78989061,
+                "name": "FortuneStories-SELECTIONOFnachi",
+                "picUrl": "https: //p2.music.126.net/pbMD5rHOnc2mffl9L7bJJg==/109951164058405278.jpg",
+                "pic_str": "109951164058405278",
+                "pic": 109951164058405278
+            },
+            "st": 1,
+            "noCopyrightRcmd": null,
+            "artistClassics": null,
+            "songJumpInfo": null,
+            "djId": 0,
+            "no": 9,
+            "fee": 0,
+            "mv": 0,
+            "cd": "1/1",
+            "t": 0,
+            "v": 4,
+            "dt": 285413,
+            "rtype": 0,
+            "rurl": null,
+            "pst": 0,
+            "alia": [
+                "原曲：星の器～CasketofStar"
+            ],
+            "pop": 10.0,
+            "rt": "",
+            "mst": 9,
+            "cp": 663018,
+            "crbt": null,
+            "cf": "",
+            "h": {
+                "br": 320000,
+                "fid": 0,
+                "size": 11418689,
+                "vd": -73073.0,
+                "sr": 44100
+            },
+            "sq": {
+                "br": 1180964,
+                "fid": 0,
+                "size": 42138100,
+                "vd": -73022.0,
+                "sr": 44100
+            },
+            "hr": null,
+            "l": {
+                "br": 128000,
+                "fid": 0,
+                "size": 4567502,
+                "vd": -69994.0,
+                "sr": 44100
+            },
+            "rtUrl": null,
+            "ftype": 0,
+            "mark": 262144,
+            "a": null,
+            "m": {
+                "br": 192000,
+                "fid": 0,
+                "size": 6851231,
+                "vd": -70856.0,
+                "sr": 44100
+            },
+            "name": "LollipopLove",
+            "id": 1363890971,
+            "privilege": {
+                "id": 1363890971,
+                "fee": 0,
+                "payed": 0,
+                "st": 0,
+                "pl": 320000,
+                "dl": 999000,
+                "sp": 7,
+                "cp": 1,
+                "subp": 1,
+                "cs": false,
+                "maxbr": 999000,
+                "fl": 320000,
+                "toast": false,
+                "flag": 256,
+                "preSell": false,
+                "playMaxbr": 999000,
+                "downloadMaxbr": 999000,
+                "maxBrLevel": "lossless",
+                "playMaxBrLevel": "lossless",
+                "downloadMaxBrLevel": "lossless",
+                "plLevel": "exhigh",
+                "dlLevel": "lossless",
+                "flLevel": "exhigh",
+                "rscl": null,
+                "freeTrialPrivilege": {
+                    "resConsumable": false,
+                    "userConsumable": false,
+                    "listenType": null,
+                    "cannotListenReason": null,
+                    "playReason": null,
+                    "freeLimitTagType": null
+                },
+                "rightSource": 0,
+                "chargeInfoList": [
+                    {
+                        "rate": 128000,
+                        "chargeUrl": null,
+                        "chargeMessage": null,
+                        "chargeType": 0
+                    },
+                    {
+                        "rate": 192000,
+                        "chargeUrl": null,
+                        "chargeMessage": null,
+                        "chargeType": 0
+                    },
+                    {
+                        "rate": 320000,
+                        "chargeUrl": null,
+                        "chargeMessage": null,
+                        "chargeType": 0
+                    },
+                    {
+                        "rate": 999000,
+                        "chargeUrl": null,
+                        "chargeMessage": null,
+                        "chargeType": 1
+                    }
+                ],
+                "code": 0,
+                "message": null,
+                "plLevels": null,
+                "dlLevels": null,
+                "ignoreCache": null,
+                "bd": null
+            }
+        },
+        {
+            "rtUrls": [
+                
+            ],
+            "ar": [
+                {
+                    "id": 16208,
+                    "name": "坂上なち",
+                    "alia": [
+                        "nachi"
+                    ]
+                }
+            ],
+            "al": {
+                "id": 78989061,
+                "name": "FortuneStories-SELECTIONOFnachi",
+                "picUrl": "https: //p2.music.126.net/pbMD5rHOnc2mffl9L7bJJg==/109951164058405278.jpg",
+                "pic_str": "109951164058405278",
+                "pic": 109951164058405278
+            },
+            "st": 1,
+            "noCopyrightRcmd": null,
+            "artistClassics": null,
+            "songJumpInfo": null,
+            "djId": 0,
+            "no": 10,
+            "fee": 0,
+            "mv": 0,
+            "cd": "1/1",
+            "t": 0,
+            "v": 3,
+            "dt": 243800,
+            "rtype": 0,
+            "rurl": null,
+            "pst": 0,
+            "alia": [
+                "原曲：ラクトガール～少女密室"
+            ],
+            "pop": 10.0,
+            "rt": "",
+            "mst": 9,
+            "cp": 663018,
+            "crbt": null,
+            "cf": "",
+            "h": {
+                "br": 320000,
+                "fid": 0,
+                "size": 9753121,
+                "vd": -87257.0,
+                "sr": 44100
+            },
+            "sq": null,
+            "hr": null,
+            "l": {
+                "br": 128000,
+                "fid": 0,
+                "size": 3901275,
+                "vd": -83405.0,
+                "sr": 44100
+            },
+            "rtUrl": null,
+            "ftype": 0,
+            "mark": 262144,
+            "a": null,
+            "m": {
+                "br": 192000,
+                "fid": 0,
+                "size": 5851890,
+                "vd": -84778.0,
+                "sr": 44100
+            },
+            "name": "N.I.G.H.T.M.A.R.E.-NhatoREMIX-",
+            "id": 1363890964,
+            "privilege": {
+                "id": 1363890964,
+                "fee": 0,
+                "payed": 0,
+                "st": 0,
+                "pl": 320000,
+                "dl": 320000,
+                "sp": 7,
+                "cp": 1,
+                "subp": 1,
+                "cs": false,
+                "maxbr": 320000,
+                "fl": 320000,
+                "toast": false,
+                "flag": 256,
+                "preSell": false,
+                "playMaxbr": 320000,
+                "downloadMaxbr": 320000,
+                "maxBrLevel": "exhigh",
+                "playMaxBrLevel": "exhigh",
+                "downloadMaxBrLevel": "exhigh",
+                "plLevel": "exhigh",
+                "dlLevel": "exhigh",
+                "flLevel": "exhigh",
+                "rscl": null,
+                "freeTrialPrivilege": {
+                    "resConsumable": false,
+                    "userConsumable": false,
+                    "listenType": null,
+                    "cannotListenReason": null,
+                    "playReason": null,
+                    "freeLimitTagType": null
+                },
+                "rightSource": 0,
+                "chargeInfoList": [
+                    {
+                        "rate": 128000,
+                        "chargeUrl": null,
+                        "chargeMessage": null,
+                        "chargeType": 0
+                    },
+                    {
+                        "rate": 192000,
+                        "chargeUrl": null,
+                        "chargeMessage": null,
+                        "chargeType": 0
+                    },
+                    {
+                        "rate": 320000,
+                        "chargeUrl": null,
+                        "chargeMessage": null,
+                        "chargeType": 0
+                    },
+                    {
+                        "rate": 999000,
+                        "chargeUrl": null,
+                        "chargeMessage": null,
+                        "chargeType": 1
+                    }
+                ],
+                "code": 0,
+                "message": null,
+                "plLevels": null,
+                "dlLevels": null,
+                "ignoreCache": null,
+                "bd": null
+            }
+        },
+        {
+            "rtUrls": [
+                
+            ],
+            "ar": [
+                {
+                    "id": 16208,
+                    "name": "坂上なち",
+                    "alia": [
+                        "nachi"
+                    ]
+                }
+            ],
+            "al": {
+                "id": 78989061,
+                "name": "FortuneStories-SELECTIONOFnachi",
+                "picUrl": "https: //p2.music.126.net/pbMD5rHOnc2mffl9L7bJJg==/109951164058405278.jpg",
+                "pic_str": "109951164058405278",
+                "pic": 109951164058405278
+            },
+            "st": 1,
+            "noCopyrightRcmd": null,
+            "artistClassics": null,
+            "songJumpInfo": null,
+            "djId": 0,
+            "no": 11,
+            "fee": 0,
+            "mv": 0,
+            "cd": "1/1",
+            "t": 0,
+            "v": 3,
+            "dt": 280920,
+            "rtype": 0,
+            "rurl": null,
+            "pst": 0,
+            "alia": [
+                "原曲：千年幻想郷～HistoryoftheMoon"
+            ],
+            "pop": 10.0,
+            "rt": "",
+            "mst": 9,
+            "cp": 663018,
+            "crbt": null,
+            "cf": "",
+            "h": {
+                "br": 320000,
+                "fid": 0,
+                "size": 11237921,
+                "vd": -91313.0,
+                "sr": 44100
+            },
+            "sq": null,
+            "hr": null,
+            "l": {
+                "br": 128000,
+                "fid": 0,
+                "size": 4495195,
+                "vd": -87579.0,
+                "sr": 44100
+            },
+            "rtUrl": null,
+            "ftype": 0,
+            "mark": 262144,
+            "a": null,
+            "m": {
+                "br": 192000,
+                "fid": 0,
+                "size": 6742770,
+                "vd": -88852.0,
+                "sr": 44100
+            },
+            "name": "SomewhereIwas-24BLREMIX-",
+            "id": 1363890969,
+            "privilege": {
+                "id": 1363890969,
+                "fee": 0,
+                "payed": 0,
+                "st": 0,
+                "pl": 320000,
+                "dl": 320000,
+                "sp": 7,
+                "cp": 1,
+                "subp": 1,
+                "cs": false,
+                "maxbr": 320000,
+                "fl": 320000,
+                "toast": false,
+                "flag": 256,
+                "preSell": false,
+                "playMaxbr": 320000,
+                "downloadMaxbr": 320000,
+                "maxBrLevel": "exhigh",
+                "playMaxBrLevel": "exhigh",
+                "downloadMaxBrLevel": "exhigh",
+                "plLevel": "exhigh",
+                "dlLevel": "exhigh",
+                "flLevel": "exhigh",
+                "rscl": null,
+                "freeTrialPrivilege": {
+                    "resConsumable": false,
+                    "userConsumable": false,
+                    "listenType": null,
+                    "cannotListenReason": null,
+                    "playReason": null,
+                    "freeLimitTagType": null
+                },
+                "rightSource": 0,
+                "chargeInfoList": [
+                    {
+                        "rate": 128000,
+                        "chargeUrl": null,
+                        "chargeMessage": null,
+                        "chargeType": 0
+                    },
+                    {
+                        "rate": 192000,
+                        "chargeUrl": null,
+                        "chargeMessage": null,
+                        "chargeType": 0
+                    },
+                    {
+                        "rate": 320000,
+                        "chargeUrl": null,
+                        "chargeMessage": null,
+                        "chargeType": 0
+                    },
+                    {
+                        "rate": 999000,
+                        "chargeUrl": null,
+                        "chargeMessage": null,
+                        "chargeType": 1
+                    }
+                ],
+                "code": 0,
+                "message": null,
+                "plLevels": null,
+                "dlLevels": null,
+                "ignoreCache": null,
+                "bd": null
+            }
+        },
+        {
+            "rtUrls": [
+                
+            ],
+            "ar": [
+                {
+                    "id": 16208,
+                    "name": "坂上なち",
+                    "alia": [
+                        "nachi"
+                    ]
+                }
+            ],
+            "al": {
+                "id": 78989061,
+                "name": "FortuneStories-SELECTIONOFnachi",
+                "picUrl": "https: //p2.music.126.net/pbMD5rHOnc2mffl9L7bJJg==/109951164058405278.jpg",
+                "pic_str": "109951164058405278",
+                "pic": 109951164058405278
+            },
+            "st": 1,
+            "noCopyrightRcmd": null,
+            "artistClassics": null,
+            "songJumpInfo": null,
+            "djId": 0,
+            "no": 12,
+            "fee": 0,
+            "mv": 0,
+            "cd": "1/1",
+            "t": 0,
+            "v": 3,
+            "dt": 224940,
+            "rtype": 0,
+            "rurl": null,
+            "pst": 0,
+            "alia": [
+                "原曲：今宵は飄逸なエゴイスト(Livever)～EgoisticFlowers."
+            ],
+            "pop": 10.0,
+            "rt": "",
+            "mst": 9,
+            "cp": 663018,
+            "crbt": null,
+            "cf": "",
+            "h": {
+                "br": 320000,
+                "fid": 0,
+                "size": 8998705,
+                "vd": -105882.0,
+                "sr": 44100
+            },
+            "sq": null,
+            "hr": null,
+            "l": {
+                "br": 128000,
+                "fid": 0,
+                "size": 3599508,
+                "vd": -102089.0,
+                "sr": 44100
+            },
+            "rtUrl": null,
+            "ftype": 0,
+            "mark": 262144,
+            "a": null,
+            "m": {
+                "br": 192000,
+                "fid": 0,
+                "size": 5399240,
+                "vd": -103464.0,
+                "sr": 44100
+            },
+            "name": "overture",
+            "id": 1363890965,
+            "privilege": {
+                "id": 1363890965,
+                "fee": 0,
+                "payed": 0,
+                "st": 0,
+                "pl": 320000,
+                "dl": 320000,
+                "sp": 7,
+                "cp": 1,
+                "subp": 1,
+                "cs": false,
+                "maxbr": 320000,
+                "fl": 320000,
+                "toast": false,
+                "flag": 256,
+                "preSell": false,
+                "playMaxbr": 320000,
+                "downloadMaxbr": 320000,
+                "maxBrLevel": "exhigh",
+                "playMaxBrLevel": "exhigh",
+                "downloadMaxBrLevel": "exhigh",
+                "plLevel": "exhigh",
+                "dlLevel": "exhigh",
+                "flLevel": "exhigh",
+                "rscl": null,
+                "freeTrialPrivilege": {
+                    "resConsumable": false,
+                    "userConsumable": false,
+                    "listenType": null,
+                    "cannotListenReason": null,
+                    "playReason": null,
+                    "freeLimitTagType": null
+                },
+                "rightSource": 0,
+                "chargeInfoList": [
+                    {
+                        "rate": 128000,
+                        "chargeUrl": null,
+                        "chargeMessage": null,
+                        "chargeType": 0
+                    },
+                    {
+                        "rate": 192000,
+                        "chargeUrl": null,
+                        "chargeMessage": null,
+                        "chargeType": 0
+                    },
+                    {
+                        "rate": 320000,
+                        "chargeUrl": null,
+                        "chargeMessage": null,
+                        "chargeType": 0
+                    },
+                    {
+                        "rate": 999000,
+                        "chargeUrl": null,
+                        "chargeMessage": null,
+                        "chargeType": 1
+                    }
+                ],
+                "code": 0,
+                "message": null,
+                "plLevels": null,
+                "dlLevels": null,
+                "ignoreCache": null,
+                "bd": null
+            }
+        }
+    ],
+    "code": 200,
+    "album": {
+        "songs": [
+            
+        ],
+        "paid": false,
+        "onSale": false,
+        "mark": 0,
+        "awardTags": null,
+        "displayTags": null,
+        "publishTime": 1546099200000,
+        "company": "",
+        "briefDesc": "",
+        "picUrl": "https: //p2.music.126.net/pbMD5rHOnc2mffl9L7bJJg==/109951164058405278.jpg",
+        "artists": [
+            {
+                "img1v1Id": 18686200114669622,
+                "topicPerson": 0,
+                "musicSize": 0,
+                "albumSize": 0,
+                "briefDesc": "",
+                "picUrl": "https: //p2.music.126.net/6y-UleORITEDbvrOLV0Q8A==/5639395138885805.jpg",
+                "picId": 0,
+                "img1v1Url": "https: //p2.music.126.net/VnZiScyynLG7atLIZ2YPkw==/18686200114669622.jpg",
+                "followed": false,
+                "trans": "",
+                "alias": [
+                    
+                ],
+                "name": "坂上なち",
+                "id": 16208,
+                "img1v1Id_str": "18686200114669622"
+            }
+        ],
+        "copyrightId": 663018,
+        "picId": 109951164058405278,
+        "artist": {
+            "img1v1Id": 109951163533301469,
+            "topicPerson": 0,
+            "musicSize": 334,
+            "albumSize": 6,
+            "briefDesc": "",
+            "picUrl": "https: //p2.music.126.net/7oQLn5WlTOVWhKJJ5xBuIQ==/109951163533304347.jpg",
+            "picId": 109951163533304347,
+            "img1v1Url": "https: //p2.music.126.net/8cqLVGpDbKYguSdOE7AW1g==/109951163533301469.jpg",
+            "followed": false,
+            "trans": "",
+            "alias": [
+                "nachi"
+            ],
+            "name": "坂上なち",
+            "id": 16208,
+            "picId_str": "109951163533304347",
+            "img1v1Id_str": "109951163533301469"
+        },
+        "commentThreadId": "R_AL_3_78989061",
+        "blurPicUrl": "https: //p2.music.126.net/pbMD5rHOnc2mffl9L7bJJg==/109951164058405278.jpg",
+        "companyId": 0,
+        "pic": 109951164058405278,
+        "subType": "录音室版",
+        "status": 0,
+        "description": "FortuneMusicに続く東方アレンジ・ボーカルベスト第二弾。\n\u3000書き下ろしに加えてリミックストラックも収録した12曲。\n\u3000nachi自選の「もうひとつのベスト集」へ、ようこそ。\n",
+        "tags": "",
+        "alias": [
+            
+        ],
+        "name": "FortuneStories-SELECTIONOFnachi",
+        "id": 78989061,
+        "type": "专辑",
+        "size": 12,
+        "picId_str": "109951164058405278",
+        "info": {
+            "commentThread": {
+                "id": "R_AL_3_78989061",
+                "resourceInfo": {
+                    "id": 78989061,
+                    "userId": -1,
+                    "name": "FortuneStories-SELECTIONOFnachi",
+                    "imgUrl": "http: //p4.music.126.net/pbMD5rHOnc2mffl9L7bJJg==/109951164058405278.jpg",
+                    "creator": null,
+                    "encodedId": null,
+                    "subTitle": null,
+                    "webUrl": null
+                },
+                "resourceType": 3,
+                "commentCount": 47,
+                "likedCount": 0,
+                "shareCount": 29,
+                "hotCount": 2,
+                "latestLikedUsers": null,
+                "resourceId": 78989061,
+                "resourceOwnerId": -1,
+                "resourceTitle": "FortuneStories-SELECTIONOFnachi"
+            },
+            "latestLikedUsers": null,
+            "liked": false,
+            "comments": null,
+            "resourceType": 3,
+            "resourceId": 78989061,
+            "commentCount": 47,
+            "likedCount": 0,
+            "shareCount": 29,
+            "threadId": "R_AL_3_78989061"
+        }
+    }
+}
