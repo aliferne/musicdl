@@ -372,6 +372,40 @@ class MusicClient:
                 break
         return song_infos or []
 
+    """parseAlbum"""
+    # [Ferne] NOTE:
+    #   I mainly use NetEase as my music application, 
+    #   so the modification is going to be here.
+    #
+    #   Basically we want to ACHEIVE these targets:
+    #       1. support of parsing and downloading albums
+    #       2. support of optional music qualities (flac, mp3, wav, etc.)
+    #
+    #   in this case, we're going to read the call chain of `MusicClient`,
+    #   then we found here.   
+    #
+    #   The class `NeteaseMusicClient` has many methods but the main one
+    #   is called `parseplaylist`, other methods are all details of the
+    #   method's implementation, we may not go so deeper in it,
+    #   in the first stage, we just need to implement another parsing method
+    #   that named as `parseAlbum` and add command line options for this method
+    #
+    #   Hmm..., notice that some methods are inherited from `BaseMusicClient`.
+    #
+    #   The second target still remains not-thinking, let's do the first
+    #
+    def parseAlbum(self, album_url: str) -> list[SongInfo]:
+        song_infos: list[SongInfo] = []
+        for source in list(self.music_clients.keys()):
+            with suppress(Exception):
+                # FIXME: if not netease, it may boom (though Exception is suppressed)
+                song_infos = self.music_clients[source].parseAlbum(
+                    album_url, request_overrides=self.requests_overrides[source]
+                )
+            if len(song_infos := song_infos or []) > 0:
+                break
+        return song_infos or []
+
     """processinputs"""
 
     def processinputs(self, input_tip="", prefix: str = "\n"):
@@ -476,7 +510,7 @@ class MusicClient:
 def MusicClientCMD(
     keyword: str,
     playlist_url: str,
-    album_url: str | None, # [Ferne]: make it optional since only support netease
+    album_url: str, # [Ferne]: make it optional since only support netease
     music_sources: str,
     init_music_clients_cfg: str,
     requests_overrides: str,
@@ -506,7 +540,8 @@ def MusicClientCMD(
     )
 
     # switch according to keyword and playlist_url
-    if (keyword is None) and (playlist_url is None):
+    # [Ferne] add album_url
+    if (keyword is None) and (playlist_url is None) and (album_url is None):
         music_client.startcmdui()
 
     elif playlist_url is not None:
@@ -543,5 +578,6 @@ def MusicClientCMD(
 
 """tests"""
 if __name__ == "__main__":
-    music_client = MusicClient()
-    music_client.startcmdui()
+    # music_client = MusicClient()
+    # music_client.startcmdui()
+    MusicClientCMD()

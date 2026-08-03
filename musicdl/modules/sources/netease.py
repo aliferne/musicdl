@@ -3355,29 +3355,7 @@ class NeteaseMusicClient(BaseMusicClient):
         return song_infos
 
     """parseAlbum"""
-    # [Ferne] NOTE:
-    #   I mainly use NetEase as my music application, 
-    #   so the modification is going to be here.
-    #
-    #   Basically we want to ACHEIVE these targets:
-    #       1. support of parsing and downloading albums
-    #       2. support of optional music qualities (flac, mp3, wav, etc.)
-    #
-    #   in this case, we're going to read the call chain of `MusicClient`,
-    #   then we found here.   
-    #
-    #   The class `NeteaseMusicClient` has many methods but the main one
-    #   is called `parseplaylist`, other methods are all details of the
-    #   method's implementation, we may not go so deeper in it,
-    #   in the first stage, we just need to implement another parsing method
-    #   that named as `parseAlbum` and add command line options for this method
-    #
-    #   Hmm..., notice that some methods are inherited from `BaseMusicClient`.
-    #
-    #   The second target still remains not-thinking, let's do the first
-    #
-    #   [Current Progress]
-    # 
+
     # [Ferne]: Stage 1: create `parseAlbum` method
     @useparseheaderscookies
     def parseAlbum(self, album_url: str, request_overrides: dict = None):

@@ -1,6 +1,7 @@
 # Refs:
 #
 # - https://musicdl.readthedocs.io/en/latest/Quickstart.html#download-playlist-items
+# - https://pypi.org/project/musicdl/#description
 # - https://click.palletsprojects.com/en/stable/options/  
 # - https://pip.pypa.io/en/stable/cli/pip_install/
 # - https://docs.astral.sh/uv/pip/packages/#installing-a-package
