@@ -418,6 +418,16 @@ class MusicClient:
     type=str,
     show_default=True,
 )
+@click.option( 
+    # [Ferne]: add support for album url
+    "-a",
+    "--album-url",
+    "--album_url",
+    default=None,
+    help='Given an album URL, e.g., "https://music.163.com/#/album?id=78989061", musicdl automatically parses the album and downloads all tracks in it. WARNING: ONLY AVALIABLE WHEN USING NETEASE',
+    type=str,
+    show_default=True,
+)
 @click.option(
     "-m",
     "--music-sources",
@@ -466,6 +476,7 @@ class MusicClient:
 def MusicClientCMD(
     keyword: str,
     playlist_url: str,
+    album_url: str | None, # [Ferne]: make it optional since only support netease
     music_sources: str,
     init_music_clients_cfg: str,
     requests_overrides: str,
@@ -493,12 +504,23 @@ def MusicClientCMD(
         requests_overrides=requests_overrides,
         search_rules=search_rules,
     )
+
     # switch according to keyword and playlist_url
     if (keyword is None) and (playlist_url is None):
         music_client.startcmdui()
+
     elif playlist_url is not None:
         print(music_client)
         music_client.download(song_infos=music_client.parseplaylist(playlist_url))
+
+    # [Ferne]: watch the case when passing album url
+    elif album_url is not None:
+        if len(music_sources) != 1 or music_sources[0] != "NeteaseMusicClient":
+            self.logger_handle.warning(f"Notice that only NeteaseMusicClient can use album searching, selected client: {','.join(music_sources)}. Abort.")
+            return
+
+        music_client.download(song_infos=music_client.parseAlbum(album_url))
+
     else:
         print(music_client)
         selected_song_infos, final_selected_song_infos = (

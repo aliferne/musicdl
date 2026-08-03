@@ -3259,12 +3259,14 @@ class NeteaseMusicClient(BaseMusicClient):
                 **request_overrides,
             )
         ).raise_for_status()
+
         tracks_in_playlist = (
             safeextractfromdict(
                 (playlist_result := resp2json(resp=resp)), ["playlist", "trackIds"], []
             )
             or []
         )
+
         # parse track by track in playlist
         with Progress(
             TextColumn("{task.description}"),
@@ -3323,10 +3325,10 @@ class NeteaseMusicClient(BaseMusicClient):
                     f"Fail to parse track info {track_info}",
                     disable_print=self.disable_print,
                 )
-            main_process_context.advance(main_progress_id, 1)
-            main_process_context.update(
-                main_progress_id,
-                description=f"{len(tracks_in_playlist)} Songs Found in Playlist {playlist_id} >>> Completed ({idx + 1}/{len(tracks_in_playlist)}) SongInfo",
+                main_process_context.advance(main_progress_id, 1)
+                main_process_context.update(
+                    main_progress_id,
+                    description=f"{len(tracks_in_playlist)} Songs Found in Playlist {playlist_id} >>> Completed ({idx + 1}/{len(tracks_in_playlist)}) SongInfo",
             )
         # post processing
         playlist_name = legalizestring(
@@ -3373,6 +3375,8 @@ class NeteaseMusicClient(BaseMusicClient):
     #   Hmm..., notice that some methods are inherited from `BaseMusicClient`.
     #
     #   The second target still remains not-thinking, let's do the first
+    #
+    #   [Current Progress]
     # 
     # [Ferne]: Stage 1: create `parseAlbum` method
     @useparseheaderscookies
@@ -3408,7 +3412,7 @@ class NeteaseMusicClient(BaseMusicClient):
             )
 
         # NOTE album id check, parse ok
-        self.logger_handle.warning(f"[Album ID]: {album_id}")
+        # self.logger_handle.warning(f"[Album ID]: {album_id}")
 
         # check if the domain is in `NETEASE_MUSIC_HOSTS`
         if (not (hostname := obtainhostname(url=album_url))) or (
@@ -3426,16 +3430,16 @@ class NeteaseMusicClient(BaseMusicClient):
             )
         ).raise_for_status()
 
-        tracks_in_album = (
+        songs_in_album = (
             safeextractfromdict(
-                # NOTE: album_result should be normal. problem is the parser
-                # NOTE: perhaps no `album` and `trackIds` as the key fields
-                # NOTE: should see how the data in `parseplaylist` look like
-                (album_result := resp2json(resp=resp)), ["album", "trackIds"], []
+                # NOTE: album parsing ok, /api/v1 is too old...
+                (album_result := resp2json(resp=resp)), ["songs"], []
             )
             or []
         )
         # parse track by track in album
+        # FIXME: progress, print message is not the same as progress:
+        #        like `Completed(2/12) ----------- 1/12`
         with Progress(
             TextColumn("{task.description}"),
             BarColumn(bar_width=None),
@@ -3444,15 +3448,15 @@ class NeteaseMusicClient(BaseMusicClient):
             refresh_per_second=10,
         ) as main_process_context:
             main_progress_id = main_process_context.add_task(
-                f"{len(tracks_in_album)} Songs Found in Playlist {album_id} >>> Completed(0/{len(tracks_in_album)}) SongInfo",
-                total=len(tracks_in_album),
+                f"{len(songs_in_album)} Songs Found in Album {album_id} >>> Completed(0/{len(songs_in_album)}) SongInfo",
+                total=len(songs_in_album),
             )
-            for idx, track_info in enumerate(tracks_in_album):
+            for idx, track_info in enumerate(songs_in_album):
                 if idx > 0:
                     main_process_context.advance(main_progress_id, 1)
                     main_process_context.update(
                         main_progress_id,
-                        description=f"{len(tracks_in_album)} Songs Found in Playlist {album_id} >>> Completed ({idx}/{len(tracks_in_album)}) SongInfo",
+                        description=f"{len(songs_in_album)} Songs Found in Album {album_id} >>> Completed ({idx + 1}/{len(songs_in_album)}) SongInfo",
                     )
                 song_info = SongInfo(
                     source=self.source,
@@ -3466,6 +3470,7 @@ class NeteaseMusicClient(BaseMusicClient):
                 song_info_flac = self._parsewiththirdpartapis(
                     search_result=track_info, request_overrides=request_overrides
                 )
+
                 lossless_quality_is_sufficient = (
                     False
                     if (
@@ -3482,6 +3487,7 @@ class NeteaseMusicClient(BaseMusicClient):
                         lossless_quality_is_sufficient=lossless_quality_is_sufficient,
                         request_overrides=request_overrides,
                     )
+
                 if (
                     song_info := song_info
                     if song_info.with_valid_download_url
@@ -3495,18 +3501,22 @@ class NeteaseMusicClient(BaseMusicClient):
                 )
                 main_process_context.advance(main_progress_id, 1)
                 main_process_context.update(
-                 main_progress_id,
-                 description=f"{len(tracks_in_album)} Songs Found in Playlist {album_id} >>> Completed ({idx + 1}/{len(tracks_in_album)}) SongInfo",
+                    main_progress_id,
+                    description=f"{len(tracks_in_album)} Songs Found in Album {album_id} >>> Completed ({idx + 1}/{len(tracks_in_album)}) SongInfo",
             )
+        
         # post processing
+        # NOTE: album_name parse ok
         album_name = legalizestring(
             safeextractfromdict(album_result, ["album", "name"], None)
             or f"album-{album_id}"
         )
+
         song_infos, work_dir = (
             self._removeduplicates(song_infos=song_infos),
             self._constructuniqueworkdir(keyword=album_name),
         )
+
         for song_info in song_infos:
             song_info.work_dir, episodes = (
                 work_dir,
@@ -3520,4 +3530,5 @@ class NeteaseMusicClient(BaseMusicClient):
                 )
                 IOUtils.touchdir(eps_info.work_dir)
         # return results
+        # NOTE: song_infos returns normal
         return song_infos
