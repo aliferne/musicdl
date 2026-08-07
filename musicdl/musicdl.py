@@ -394,16 +394,26 @@ class MusicClient:
     #
     #   The second target still remains not-thinking, let's do the first
     #
+    #   [Progress]
+    #       Great, so the first stage is almost done, Netease supports album downlaoding now.
+    #       Then go with quality selection, this is required to edit all music sources maybe.
     def parseAlbum(self, album_url: str) -> list[SongInfo]:
         song_infos: list[SongInfo] = []
-        for source in list(self.music_clients.keys()):
+
+        for source in self.music_clients.keys():
+            if source != "NeteaseMusicClient":
+                print(f"Not supported Client: {source}, pass.")
+                continue
+
             with suppress(Exception):
-                # FIXME: if not netease, it may boom (though Exception is suppressed)
+                # actually equals to directly call NeteaseMusicClient.parseAlbum
                 song_infos = self.music_clients[source].parseAlbum(
                     album_url, request_overrides=self.requests_overrides[source]
                 )
+
             if len(song_infos := song_infos or []) > 0:
                 break
+
         return song_infos or []
 
     """processinputs"""
@@ -463,7 +473,19 @@ class MusicClient:
     show_default=True,
 )
 @click.option(
+   # [Ferne]: add support for selectable music quality
+   "-q",
+   "--music-quality",
+   "--music_quality",
+   default=None, # TODO: not sure now
+   help="The music quality",
+   type=str,
+   show_default=True,
+)
+@click.option(
     "-m",
+    # [Ferne] Notice that one of the full names should be the same
+    #         as the argument in the function
     "--music-sources",
     "--music_sources",
     default=",".join(DEFAULT_MUSIC_SOURCES),
@@ -511,6 +533,7 @@ def MusicClientCMD(
     keyword: str,
     playlist_url: str,
     album_url: str, # [Ferne]: make it optional since only support netease
+    music_quality: str, # [Ferne]: music quality
     music_sources: str,
     init_music_clients_cfg: str,
     requests_overrides: str,
@@ -538,6 +561,8 @@ def MusicClientCMD(
         requests_overrides=requests_overrides,
         search_rules=search_rules,
     )
+
+    # TODO: should set, register the music qualities
 
     # switch according to keyword and playlist_url
     # [Ferne] add album_url

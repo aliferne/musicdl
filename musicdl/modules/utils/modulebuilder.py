@@ -1,72 +1,108 @@
-'''
+"""
 Function:
     Implementation of BaseModuleBuilder
 Author:
     Zhenchao Jin
 WeChat Official Account (微信公众号):
     Charles的皮卡丘
-'''
+"""
+
 import copy
 import collections
 
 
-'''BaseModuleBuilder'''
-class BaseModuleBuilder():
+"""BaseModuleBuilder"""
+
+
+class BaseModuleBuilder:
     REGISTERED_MODULES = collections.OrderedDict()
+
     def __init__(self, requires_register_modules=None, requires_renew_modules=None):
-        if requires_register_modules is not None and isinstance(requires_register_modules, (dict, collections.OrderedDict)):
-            for name, module in requires_register_modules.items(): self.register(name, module)
-        if requires_renew_modules is not None and isinstance(requires_renew_modules, (dict, collections.OrderedDict)):
-            for name, module in requires_renew_modules.items(): self.renew(name, module)
+        if requires_register_modules is not None and isinstance(
+            requires_register_modules, (dict, collections.OrderedDict)
+        ):
+            for name, module in requires_register_modules.items():
+                self.register(name, module)
+        if requires_renew_modules is not None and isinstance(
+            requires_renew_modules, (dict, collections.OrderedDict)
+        ):
+            for name, module in requires_renew_modules.items():
+                self.renew(name, module)
         self.validate()
-    '''build'''
+
+    """build"""
+
     def build(self, module_cfg: dict):
-        module_type = (module_cfg := copy.deepcopy(module_cfg)).pop('type')
+        module_type = (module_cfg := copy.deepcopy(module_cfg)).pop("type")
         module = self.REGISTERED_MODULES[module_type](**module_cfg)
         return module
-    '''register'''
+
+    """register"""
+
     def register(self, name, module):
         assert callable(module)
         assert name not in self.REGISTERED_MODULES
         self.REGISTERED_MODULES[name] = module
-    '''renew'''
+
+    """renew"""
+
     def renew(self, name, module):
         assert callable(module)
         assert name in self.REGISTERED_MODULES
         self.REGISTERED_MODULES[name] = module
-    '''validate'''
+
+    """validate"""
+
     def validate(self):
         for _, module in self.REGISTERED_MODULES.items():
             assert callable(module)
-    '''delete'''
+
+    """delete"""
+
     def delete(self, name):
         assert name in self.REGISTERED_MODULES
         del self.REGISTERED_MODULES[name]
-    '''pop'''
+
+    """pop"""
+
     def pop(self, name):
         assert name in self.REGISTERED_MODULES
         module = self.REGISTERED_MODULES.pop(name)
         return module
-    '''get'''
+
+    """get"""
+
     def get(self, name):
         assert name in self.REGISTERED_MODULES
         module = self.REGISTERED_MODULES.get(name)
         return module
-    '''items'''
+
+    """items"""
+
     def items(self):
         return self.REGISTERED_MODULES.items()
-    '''clear'''
+
+    """clear"""
+
     def clear(self):
         return self.REGISTERED_MODULES.clear()
-    '''values'''
+
+    """values"""
+
     def values(self):
         return self.REGISTERED_MODULES.values()
-    '''keys'''
+
+    """keys"""
+
     def keys(self):
         return self.REGISTERED_MODULES.keys()
-    '''copy'''
+
+    """copy"""
+
     def copy(self):
         return self.REGISTERED_MODULES.copy()
-    '''update'''
+
+    """update"""
+
     def update(self, requires_update_modules):
         return self.REGISTERED_MODULES.update(requires_update_modules)
